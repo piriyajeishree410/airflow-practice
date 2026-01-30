@@ -6,9 +6,9 @@ import pickle
 import os
 import base64
 
-BASE_DIR = os.path.dirname(__file__)
-DATA_DIR = os.path.join(BASE_DIR, "../data")
-MODEL_DIR = os.path.join(BASE_DIR, "../model")
+BASE_DIR = "/opt/airflow"
+DATA_DIR = os.path.join(BASE_DIR, "dags/data")
+MODEL_DIR = os.path.join(BASE_DIR, "working_data/model")
 
 def load_data():
     """
