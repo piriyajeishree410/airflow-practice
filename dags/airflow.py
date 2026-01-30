@@ -1,7 +1,6 @@
 # Import necessary libraries and modules
 from airflow import DAG
-# from airflow.operators.python import PythonOperator
-from airflow.providers.standard.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
 
